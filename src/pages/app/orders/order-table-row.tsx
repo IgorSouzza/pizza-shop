@@ -1,7 +1,9 @@
-import { ArrowRight, Search, X } from 'lucide-react'
+import { ArrowRight, X } from 'lucide-react'
 
 import { Button } from '@/components/ui/button'
 import { TableCell, TableRow } from '@/components/ui/table'
+
+import { OrderDetails } from './order-details'
 
 // type OrderTableRowProps = {}
 
@@ -9,10 +11,7 @@ export function OrderTableRow() {
   return (
     <TableRow>
       <TableCell>
-        <Button variant="outline" size="xs">
-          <Search className="h-3 w-3" />
-          <span className="sr-only">Detalhes do pedido</span>
-        </Button>
+        <OrderDetails />
       </TableCell>
       <TableCell className="font-mono text-xs font-medium">
         391273hyrghwyr
